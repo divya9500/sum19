@@ -1,0 +1,24 @@
+#Write a program to check the input character for uppercase, lowercase, no. of digits and Special chars
+
+package Assessment;
+
+import java.util.Scanner;
+
+public class CharType {
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        while(true) {
+            System.out.println("enter the charater: ");
+            String s1 = s.next();
+            char c = s1.charAt(0);
+            if (c >= 65 && c <= 90)
+                System.out.println(c + " is uppercase");
+            else if (c >= 97 && c <= 122)
+                System.out.println(c + " is lowercase");
+            else if (c >= 48 && c <= 57)
+                System.out.println(c + " is numbers ");
+            else
+                System.out.println(c + " is special symbols");
+        }
+    }
+}
